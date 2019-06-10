@@ -25,6 +25,8 @@ public class Main
         System.out.println();
         System.out.println(emp1);
 
+        emp1.setSalary(emp1.getSalary() + (emp1.getSalary() * 0.03));
+        System.out.println(emp1.getSalary());
     }
 
     public static void main(String[] args)
