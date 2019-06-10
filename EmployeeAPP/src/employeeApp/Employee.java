@@ -8,11 +8,11 @@ public class Employee
     private String fname;
     private String lname;
     private double salary;
-    private Boolean has401k;
+    private Boolean has401K;
     private int companyID;
     private int healthPlanID;
 
-    public Employee(String fname, String lname, double salary, Boolean has401k, int companyID, int healthPlanID)
+    public Employee(String fname, String lname, double salary, Boolean has401K, int companyID, int healthPlanID)
     {
         maxId++;
         id = maxId;
@@ -20,7 +20,7 @@ public class Employee
         this.fname = fname;
         this.lname = lname;
         this.salary = salary;
-        this.has401k = has401k;
+        this.has401K = has401K;
         this.companyID = companyID;
         this.healthPlanID = healthPlanID;
     } 
@@ -30,7 +30,7 @@ public class Employee
     }
     public String getFname()
     {
-        return fmame;
+        return fname;
     }
     public void setFname(String fname)
     {
@@ -87,7 +87,7 @@ public class Employee
                         "fname: "+ fname + "\n"+
                         "lname: "+ lname + "\n" +
                         "salary: "+ salary + "\n"+
-                        "has401k: "+ has401k + "\n"+
+                        "has401K: "+ has401K + "\n"+
                         "companyID: "+ companyID + "\n"+
                         "healthPlanID: "+ healthPlanID + "\n";
         return rtnStr;
